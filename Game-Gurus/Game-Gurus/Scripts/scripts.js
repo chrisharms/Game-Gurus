@@ -184,7 +184,7 @@ function createReviewCard(review, index, favorite) {
             gameTitle = gameArray[i].title;
         }
     }
-    if (index === 0) {
+    if (index === 0 && !favorite || index === 0 && reviewArray.length === 0) {
         $("#review-section").append("<section class='section' id='all-reviews'></section>");
     }
     if (favorite && reviewArray.length === 0 && document.getElementById("my-reviews-placeholder") === null) {
