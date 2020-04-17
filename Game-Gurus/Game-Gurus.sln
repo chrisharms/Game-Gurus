@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-Gurus", "Game-Gurus\Game-Gurus.csproj", "{D35E5487-0DDB-4712-A94E-3D5183C55AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game-Gurus-API", "Game-Gurus-API\Game-Gurus-API.csproj", "{47FC243F-5C38-4ABE-887D-91880B1B7A1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35E5487-0DDB-4712-A94E-3D5183C55AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35E5487-0DDB-4712-A94E-3D5183C55AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35E5487-0DDB-4712-A94E-3D5183C55AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35E5487-0DDB-4712-A94E-3D5183C55AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47FC243F-5C38-4ABE-887D-91880B1B7A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FC243F-5C38-4ABE-887D-91880B1B7A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FC243F-5C38-4ABE-887D-91880B1B7A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FC243F-5C38-4ABE-887D-91880B1B7A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C867D517-6E6B-4161-BBAB-E71A84A3BC63}
+	EndGlobalSection
+EndGlobal

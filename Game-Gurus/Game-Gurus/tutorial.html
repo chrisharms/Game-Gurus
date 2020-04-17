@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html id="tutorial">
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/tutorialScripts.js"></script>
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="CSS/bulma.css">
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Gurus | Learn Bulma</title>
+</head>
+<body>
+    <section class="hero" id="navSection">
+        <div class="hero-head">
+            <nav class="navbar has-shadow" id="mainNav" role="navigation" aria-label="mainNavigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html"><img src="Images/icon.png" /></a>
+                    <h1 class="navbar-item" id="title">Game Gurus</h1>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="myReviews.html">My Reviews</a>
+                        <a class="navbar-item" id="learn-bulma" href="tutorial.html">Learn Bulma</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="block">
+                <article class="message">
+                    <div class="message-header" id="whatsBulma">
+                        <p><font color="#00d1b2">What Is Bulma?</font></p>
+                    </div>
+                    <div class="message-body">
+                        Bulma is a free, open source CSS framework based on Flexbox (a layout model that allows
+                        elements to align and distribute space within a container). Bulma allows for easier web
+                        styling with the use of preset classes that are meaningfully named.
+                    </div>
+                </article>
+                <!--Downloading Visual Studio Section-->
+                <article class="message">
+                    <div class="message-header" id="firstStep">
+                        <p><font color="#00d1b2">The First Step: Visual Studio - Setting Up Your Environment</font></p>
+                    </div>
+                    <div class="message-body">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    To get started using Bulma, we first need an ide (Integrated Development Environment) to use
+                                    it in. Though many could support the Bulma framework, for this example we will be using
+                                    Visual Studio that can be downloaded for free
+                                    <a href="https://visualstudio.microsoft.com/downloads/" target="_blank"><i>here.</i></a>
+                                    <br /> <i>
+                                        - To make web applications, like in this example, you must select the
+                                        "ASP.NET and web development" package during installation.
+                                    </i>
+                                </li>
+                                <li>
+                                    Once installed, open Visual Studio and click <i>new.</i>
+                                </li>
+                                <li>
+                                    Then go to <i>Web</i> and select <i>ASP.NET Web Application (.Net Framework)</i>.
+                                </li>
+                                <li>
+                                    Finally, name your project and click <i>OK.</i>
+                                </li>
+                            </ul>
+                            <h6>
+                                Your new project should then open up and your screen should look like the image below. From there just select File -> New File -> (Go to <i>Web</i>) Empty HTML File, and name it index.html.
+                            </h6>
+                        </div>
+                        <div class="image" id="VSStartup">
+                            <img src="Images/vs start.png" alt="Visual Studio Start Screen" style="border-radius: 6px;" />
+                        </div>
+                    </div>
+                </article>
+                <!--Installing Bulma Section-->
+                <article class="message">
+                    <div class="message-header" id="startBulma">
+                        <p><font color="#00d1b2">Getting Bulma Ready To Use</font></p>
+                    </div>
+                    <div class="message-body">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    This part is very easy and has multiple options. To install Bulma, you can go to their website
+                                    <a href="https://bulma.io/documentation/overview/start/" target="_blank">here</a> to see the different options,
+                                    but for us we can make it even simpler. Taken from the Bulma website, you can simply copy the line below and paste it in your document
+                                    somewhere inside the
+                                    <i>head</i> tag.
+                                    <i>(See image below)</i>
+                                    <br><br>
+                                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm
+                                    /bulma@0.8.0/css/bulma.min.css"&gt;
+                                </li>
+                            </ul>
+                            <h6>
+                                <br>
+                                After this simple paste, Bulma will now work in your project by retrieving the framework css files via the internet.
+                            </h6>
+                        </div>
+                        <div class="image">
+                            <img src="Images/insert-stylesheet-screenshot.png" alt="Insert Bulma Code" style="border-radius: 6px;" />
+                        </div>
+                    </div>
+                </article>
+                <!--Hero Section-->
+                <article class="message">
+                    <div class="message-header" id="usingBulma">
+                        <p><font color="#00d1b2">Using Bulma To Build A Page</font></p>
+                    </div>
+                    <div class="message-body">
+                        <div class="content">
+                            To start our page, we'll create the header. This can be done by using the <strong>hero section </strong>plus its inner classes. Follow the steps below to get started.
+                            <ul>
+                                <li>
+                                    First we start with a section, and because Bulma works completely through class names, the class name of this section will be "hero".
+                                    <br><i>-Note:</i> To change the header background color, after class name "hero", add the "is-" modifier and add a keyword from dropbox below.
+                                </li>
+                                <li>
+                                    Within that section, we will create one &lt;div&gt; with class name "hero-body", a &lt;div&gt; within that with class name "container",
+                                    and an &lt;h1&gt; tag within that with class name "title". Within that &lt;h1&gt; tag you can write what you would like the header to say.
+                                </li>
+                                <li>
+                                    To create a subtitle, put an &lt;h2&gt; tag after the &lt;h1&gt; tag with class name "subtitle" and its name within that.
+                                </li>
+                            </ul>
+                            <p>
+                                <br>Select a different background keyword to see its resulting color:
+                                <div class="control" style="padding: 3%; padding-left: 0;">
+                                    <div class="select">
+                                        <select id="colorPicked">
+                                            <option>is-success</option>
+                                            <option>is-primary</option>
+                                            <option>is-info</option>
+                                            <option>is-warning</option>
+                                            <option>is-danger</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="container" style="padding-bottom: 3%;">
+                                <section class="hero is-success" id="displayHeader" style="border-radius: 4px;">
+                                    <div class="hero-body">
+                                        <div class="container">
+                                            <h1 class="title">
+                                                Primary title
+                                            </h1>
+                                            <h2 class="subtitle">
+                                                Primary subtitle
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <h6><br>The image below shows the code to create a basic "hero" page header.</h6>
+                        </div>
+                        <div class="image" style="padding-top: 2%;">
+                            <img src="Images/bulma-header-screenshot.png" alt="Insert Bulma header" style="border-radius: 6px;" />
+                        </div>
+                    </div>
+                </article>
+                <!--Nav Section-->
+                <article class="message">
+                    <div class="message-header" id="startBulma">
+                        <p><font color="#00d1b2">Creating The Navigation Bar</font></p>
+                    </div>
+                    <div class="message-body">
+                        <div class="content">
+                            The next part of the page we are going to work on is the navigation bar. Since we dove more into the
+                            code in the last section, this one is merely going to touch on a couple key aspects from the given
+                            example code. Note that this code was added before the previously written code to be placed above the hero
+                            section but, like many of the aspects in this tutorial, this is up to you to decide how you would like to
+                            display it.
+                            <ul>
+                                <li>
+                                    Starting with a "navbar" class, the first &lt;div&gt; adds the bulma logo image to the navbar.
+                                    There are two things to note in this section: First is the use of the anchor tag &lt;a&gt;, making the
+                                    image itself a link to a website. (Though not necessary, it's a great example of attaching links)
+                                </li>
+                            </ul>
+                            <h6>
+                                <br>
+                                After this simple paste, Bulma will now work in your project by retrieving the framework css files via the internet.
+                            </h6>
+                        </div>
+                        <div class="image">
+                            <img src="Images/insert-stylesheet-screenshot.png" alt="Insert Bulma Code" style="border-radius: 6px;" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <h4 class="title">Thanks for learning about Bulma!</h4>
+            <p>To learn more about the Bulma CSS framework, visit <a href="https://bulma.io/">there website!</a></p>
+        </div>
+    </footer>
+</body>
+</html>
