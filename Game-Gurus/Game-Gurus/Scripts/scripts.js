@@ -191,7 +191,7 @@ function createReviewCard(review, index, favorite) {
         $("#all-reviews").append("<h1 class='title has-text-centered' id='my-reviews-placeholder'>You haven't written any reviews yet :/</h1>");
     }
     if (favorite && index === 0) {
-        $("#all-reviews").append("<h1 class='title has-text-centered' id='favorites-title'>Here's some reviews that really stuck with you!</h1>");
+        $("#all-reviews").append("<h1 class='title has-text-centered' id='favorites-title'>Here's some of your favorite reviews from your favorite amateur critics!</h1>");
     }
     var id = review.reviewId;
     if (index % 3 === 0) {

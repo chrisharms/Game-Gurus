@@ -70,8 +70,11 @@
     <Content Include="CSS\bulma.css" />
     <Content Include="CSS\styles.css" />
     <Content Include="Images\bulma-header-screenshot.png" />
+    <Content Include="Images\BulmaNavbar-screenshot.png" />
     <Content Include="Images\icon.png" />
     <Content Include="Images\insert-stylesheet-screenshot.png" />
+    <Content Include="Images\navbarCode-screenshot1.png" />
+    <Content Include="Images\navbarCode-screenshot2.png" />
     <Content Include="Images\StartupScreenShot.png" />
     <Content Include="Images\vs start.png" />
     <Content Include="index.html" />
@@ -91,7 +94,7 @@
   <ItemGroup>
     <Content Include="CSS\bulma.css.map" />
     <None Include="packages.config" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Astro Desktop.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
