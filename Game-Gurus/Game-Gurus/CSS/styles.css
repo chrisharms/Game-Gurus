@@ -291,6 +291,10 @@ button {
         margin-left: auto;
         margin-right: auto;
     }
+    #finishedPage1, finishedPage2 {
+        margin: 0;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1100px) {
     #favorites-title {
