@@ -3,6 +3,9 @@
     font-weight: 500;
     padding: 0;
 }
+.footer {
+    background-color: #FAFAFA;
+}
 .title {
     color: #4A4A4A;
 }
@@ -86,6 +89,7 @@
     padding-right: 4%;
     padding-left: 4%;
     padding-top: 0.5%;
+    box-shadow: none;
 }
 #hero-title, #hero-title-2 {
     padding-top: 5%;
@@ -99,13 +103,12 @@
     padding: 2%;
 }
 #hero-body-title, #hero-body-review {
-    padding: 8%;
+    padding: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 #ttlFeaturedGames {
     padding: 2%;
-    color: white;
 }
 .level, .level-left {
     margin: auto;
@@ -158,7 +161,7 @@
     margin-bottom: 8%;
 }
 #filterSection {
-    background-color: #82d9cc;
+    background-color: rgba(0, 0, 0, 0.07);
     padding: 6%;
 }
 .modal .content:not(:last-child), .modal .content {
@@ -176,7 +179,7 @@
     justify-content:center;
 }
 #username-section {
-    background-color: #82d9cc;
+    background-color: rgba(0, 0, 0, 0.07);
     padding: 8%;
 }
 .button.is-warning, .button.is-warning:hover, .button.is-warning::selection {
@@ -211,7 +214,7 @@ button {
     max-height: 600px;
 }
 #game-suggestion {
-    background-color: #82d9cc;
+    background-color: rgba(0, 0, 0, 0.07);
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -268,8 +271,7 @@ button {
 }
 #favorites-title {
     padding: 7%;
-    background-color: #82d9cc;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.07);
     margin: -10rem;
     margin-top: 4%;
     margin-bottom: 4%;
@@ -283,6 +285,10 @@ button {
 }
 .pic-caption {
     margin: 2%;
+}
+.hero-body {
+    padding-left: 6%;
+    padding-right: 6%;
 }
 @media screen and (min-width: 769px) {
     #tutorial .message img, .pic-caption {

@@ -69,12 +69,22 @@
   <ItemGroup>
     <Content Include="CSS\bulma.css" />
     <Content Include="CSS\styles.css" />
+    <Content Include="Images\bodyExamplePage-screenshot.png" />
     <Content Include="Images\bulma-header-screenshot.png" />
     <Content Include="Images\BulmaNavbar-screenshot.png" />
+    <Content Include="Images\columnCode-screenshot.png" />
+    <Content Include="Images\finishedPage-screenshot1.png" />
+    <Content Include="Images\finishedPage-screenshot2.png" />
+    <Content Include="Images\footerCode-screenshot.png" />
+    <Content Include="Images\footerPage-screenshot.png" />
+    <Content Include="Images\footerPageCloseUp-screenshot.png" />
     <Content Include="Images\icon.png" />
     <Content Include="Images\insert-stylesheet-screenshot.png" />
     <Content Include="Images\navbarCode-screenshot1.png" />
     <Content Include="Images\navbarCode-screenshot2.png" />
+    <Content Include="Images\pagination-screenshot.png" />
+    <Content Include="Images\paginationPage-screenshot.png" />
+    <Content Include="Images\paginationPageCloseUp-screenshot.png" />
     <Content Include="Images\StartupScreenShot.png" />
     <Content Include="Images\vs start.png" />
     <Content Include="index.html" />

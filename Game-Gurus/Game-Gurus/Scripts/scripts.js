@@ -188,7 +188,8 @@ function createReviewCard(review, index, favorite) {
         $("#review-section").append("<section class='section' id='all-reviews'></section>");
     }
     if (favorite && reviewArray.length === 0 && document.getElementById("my-reviews-placeholder") === null) {
-        $("#all-reviews").append("<h1 class='title has-text-centered' id='my-reviews-placeholder'>You haven't written any reviews yet :/</h1>");
+        $("#all-reviews").css("padding-top", "0");
+        $("#favorites-title").css("margin-top", "0");
     }
     if (favorite && index === 0) {
         $("#all-reviews").append("<h1 class='title has-text-centered' id='favorites-title'>Here's some of your favorite reviews from your favorite amateur critics!</h1>");
@@ -401,8 +402,9 @@ function createReviewForm() {
     $("#add-modal").toggleClass("is-active");
     var idArray = this.id.split('-');
     var id = parseInt(idArray[idArray.length - 1]);
+    var game = getGame(id, gameArray);
     $("#modal-foot").children(".is-primary").attr("id", "add-review-" + id);
-    $("#titleText").html("<font color='#00d1b2'>" + gameArray[id - 1].title + "</font>"); 
+    $("#titleText").html("<font color='#00d1b2'>" + game.title + "</font>"); 
 }
 
 // Click handler for Add Review button in add new review pop up window
