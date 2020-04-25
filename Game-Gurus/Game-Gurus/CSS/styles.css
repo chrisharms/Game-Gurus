@@ -290,6 +290,13 @@ button {
     padding-left: 6%;
     padding-right: 6%;
 }
+#footer-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 0.7%;
+    position: relative;
+    bottom: -3px;
+}
 @media screen and (min-width: 769px) {
     #tutorial .message img, .pic-caption {
         width: 60%;
@@ -398,6 +405,9 @@ button {
     #my-reviews-placeholder {
         margin-top: 11%;
         margin-bottom: 18%;
+    }
+    #footer-icon {
+        margin-right: 1.5%;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 550px) {

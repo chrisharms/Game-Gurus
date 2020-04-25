@@ -5,20 +5,6 @@ var APIConnect;
 var favoriteReviewArray;
 var currentUser;
 
-// Comment out when using database connection
-/*
-if ($("html").attr("id") === "index") {
-    gameArray = new Array();
-    gameArray.push(new Game(1, "Doom Eternal", "M (Mature)", "First Person Shooter", "https://asset.msi.com/sam/gamelaunch/191/cover.jpg", "March 20, 2020", "id Software", "Developed by id Software, DOOM Eternal delivers the ultimate combination of speed and power, along with the next leap in push-forward, first-person combat."));
-    gameArray.push(new Game(2, "Call of Duty: Modern Warfare", "M (Mature)", "First Person Shooter", "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/72874023_113155743441597_4654493356171198464_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_ohc=tr7g-03RdrUAX8Ood-T&_nc_ht=scontent-lga3-1.xx&oh=4cd2bd475fcd7fde2993fa17454f4029&oe=5EB72CFA", "September 12, 2019", "Infinity Ward", "Modern Warfare® engulfs fans in an incredibly raw, gritty, provocative narrative that brings unrivaled intensity and shines a light on the changing nature of modern war."));
-    gameArray.push(new Game(3, "Assassin's Creed Odyssey", "M (Mature)", "Action Role-Playing", "https://kbimages1-a.akamaihd.net/6ea15929-5917-436e-8dd5-09b8c51e5104/1200/1200/False/assassin-s-creed-odyssey-1.jpg", "October 2, 2018", "Ubisoft Montreal", "Write your own epic odyssey and become a legendary Spartan hero. Forge your destiny in a world on the brink of tearing itself apart. Influence how history unfolds in an ever-changing world shaped by your choices."));
-    gameArray.push(new Game(4, "Red Dead Redemption 2", "M (Mature)", "Action Adventure", "https://www.digiseller.ru/preview/812415/p1_2764235_d8cb3aa3.jpg", "October 26, 2018", "Rockstar Games", "Developed by the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland."));
-    gameArray.push(new Game(5, "Super Smash Bros. Ultimate", "E10+ (Everyone 10+)", "Fighting", "https://www.mobygames.com/images/covers/l/548925-super-smash-bros-ultimate-nintendo-switch-front-cover.jpg", "December 7, 2018", "Nintendo", "Inklings from the Splatoon series, as well as returning Smash characters like Mario and Link will be making appearances in this classic Nintendo franchise's Switch debut."));
-    gameArray.push(new Game(6, "The Elder Scrolls V: Skyrim", "M (Mature)", "Action Role-Playing", "https://www.mobygames.com/images/covers/l/473949-the-elder-scrolls-v-skyrim-special-edition-playstation-4-manual.jpg", "November 10, 2011", "Bethesda Game Studios", "Skyrim reimagines the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose."));
-}
-*/
-// End comment out
-
 $(window).ready(function () {
     $(".navbar-burger").on("click", function () {
         $(".navbar-burger").toggleClass("is-active");
@@ -26,22 +12,10 @@ $(window).ready(function () {
     });
 
     // CHRIS'S DATABASE CONNECTION CODE FOR GAMES, FULLY FUNCTIONING
-    // /*
     APIConnect = new XMLHttpRequest();
     APIConnect.open("GET", "https://localhost:44320/api/Game/GetGames", true);
     APIConnect.onreadystatechange = loadGamesFromAPI;
     APIConnect.send();
-        // */
-
-        // Comment out when using database connection
-        /*
-        for (var i = 0; i < gameArray.length; i++) {
-            createGameCard(gameArray[i], i);
-        }
-        $(".button-reviews").on("click", createGameReviews);
-        $(".button-add-new").on("click", createReviewForm);
-        */
-        // End comment out
 
     if ($("html").attr("id") === "index") {
         $(".game-filter").on("change", gameFilterOnChange);
